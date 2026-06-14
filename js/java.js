@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Ranúnculo",
       desc: "Ranunculus asiaticus\nColor: Rosa claro\nIdeal para espacios delicados y románticos",
       price: "$350 MXN",
-      image: "Images/Ranunculoo.jpg"
+      image: "images/Ranunculoo.jpg"
     }
   ];
 
