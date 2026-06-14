@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN STORE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <div class="contenedor-principal">
+            <img src="images/logo.png" alt="Green Store Logo" class="logo">
+            <h1>Green Store</h1>
+            <p>Dale vida y elegancia a tu espacio con nuestras flores únicas</p>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <a href="#inicio">INICIO</a>
+        <a href="#coleccion">COLECCIÓN FLORAL</a>
+        <a href="#cuidados">CUIDADOS</a>
+        <a href="#servicios">SERVICIOS</a>
+        <a href="#contacto">CONTACTO</a>
+
+        <button class="menu-celular" id="menu-celular" aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+
+    <div class="menu-desplegable" id="menu-desplegable">
+        <a href="#inicio">INICIO</a>
+        <a href="#coleccion">COLECCIÓN FLORAL</a>
+        <a href="#cuidados">CUIDADOS</a>
+        <a href="#servicios">SERVICIOS</a>
+        <a href="#contacto">CONTACTO</a>
+    </div>
+
+    <section id="introduccion" class="introduccion">
+        <h2>Bienvenido a Green Store</h2>
+        <p>En Green Store, nos apasiona la belleza de las flores y su capacidad para transformar cualquier espacio.
+            Nuestra colección floral está cuidadosamente seleccionada para ofrecerte una variedad de opciones que se
+            adaptan a tus gustos y necesidades. Ya sea que estés buscando un toque de color para tu hogar, un regalo
+            especial o simplemente quieras disfrutar de la naturaleza en su máxima expresión, tenemos la flor perfecta
+            para ti.</p>
+        <a href="#coleccion" class="boton">VER COLECCIÓN</a>
+    </section>
+
+    <section id="coleccion">
+        <h2>Colección Floral</h2>
+        <div class="cartas">
+            <button class="arrow left" onclick="prevPlant()">❮</button>
+            <div id="deslizador"></div>
+            <button class="arrow right" onclick="nextPlant()">❯</button>
+        </div>
+        <div class="cartas-footer">
+            <button class="btn-more" onclick="showDetails()">Ver más</button>
+        </div>
+    </section>
+
+    <section id="cuidados">
+        <h2>CUIDADOS BÁSICOS</h2>
+        <div class="cuidados-planta">
+            <div>
+                <h3>MAGNOLIA</h3>
+                <p>La magnolia necesita buena iluminación y puede tolerar algunas horas de sol directo suave. Requiere
+                    riego regular, especialmente en temporadas cálidas, evitando siempre el encharcamiento. Crece mejor
+                    en suelos ligeramente ácidos, ricos en materia orgánica y con buen drenaje. Se recomienda aplicar
+                    abono en primavera para fortalecer su crecimiento y floración. Es una planta resistente que se
+                    adapta bien a exteriores y espacios amplios.</p>
+            </div>
+            <div>
+                <h3>ORQUÍDEA</h3>
+                <p>La orquídea es una planta delicada que necesita luz indirecta brillante y un ambiente bien ventilado.
+                    Su riego debe realizarse cada siete a diez días, permitiendo que el sustrato se seque ligeramente
+                    entre riegos. No debe plantarse en tierra común; requiere un sustrato especial para orquídeas que
+                    permita la circulación de aire en las raíces. Se recomienda utilizar abono específico para orquídeas
+                    una vez al mes durante la floración. Prefiere ambientes cálidos y húmedos.</p>
+            </div>
+            <div>
+                <h3>PEONÍA</h3>
+                <p>La peonía es una flor de gran elegancia que requiere luz indirecta o sol suave durante algunas horas
+                    del día. Debe regarse dos veces por semana, procurando que la tierra se mantenga húmeda pero sin
+                    encharcamientos. Necesita un suelo fértil, suelto y con buen drenaje para evitar que las raíces se
+                    dañen. Se recomienda aplicar abono orgánico cada quince días en temporada de crecimiento para
+                    estimular una floración abundante. Prefiere climas templados y espacios ventilados.</p>
+            </div>
+            <div>
+                <h3>RANÚNCULO</h3>
+                <p>El ranúnculo se desarrolla mejor en lugares con luz natural abundante, pero sin exposición directa al
+                    sol intenso. Requiere riego moderado, manteniendo la tierra ligeramente húmeda. Es importante
+                    utilizar un sustrato ligero y bien drenado para prevenir exceso de humedad. Durante la etapa de
+                    floración, puede aplicarse fertilizante líquido suave cada dos semanas. Esta planta prefiere
+                    ambientes frescos y protegidos del calor extremo.</p>
+            </div>
+        </div>
+    </section>
+
+    <main id="servicios" class="services">
+        <div class="services-content container">
+            <h2>NUESTROS SERVICIOS</h2>
+            <div class="services-group">
+                <div class="services-1">
+                    <img src="images/SERV 1.png" alt="Variedad de plantas">
+                    <h3>VARIEDAD DE PLANTAS</h3>
+                </div>
+                <div class="services-1">
+                    <img src="images/SERV (3).png" alt="Envíos rápidos">
+                    <h3>ENVÍOS RÁPIDOS</h3>
+                </div>
+                <div class="services-1">
+                    <img src="images/SERV (2).png" alt="Asesoría">
+                    <h3>CONTACTO DE ASESORÍA</h3>
+                </div>
+            </div>
+            <p>
+                Ofrecemos una amplia variedad de plantas para transformar y llenar de vida tus espacios. Desde plantas
+                ornamentales y de interior hasta especies ideales para jardín, contamos con opciones para todos los
+                gustos y niveles de experiencia.
+                También ofrecemos envíos rápidos a todo México y la posibilidad de realizar pedidos personalizados si
+                estás buscando una planta en especial.
+                Estamos comprometidos en brindarte atención de calidad y ayudarte a encontrar la planta perfecta para
+                ti.
+            </p>
+            <a href="#contacto" class="boton">¡CONTÁCTANOS YA!</a>
+        </div>
+    </main>
+
+    <section id="contacto">
+        <form class="contacto-m" action="#contacto" method="POST" autocomplete="on">
+            <div class="soporte">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="soporte">
+                <label for="email">Correo</label>
+                <input id="email" name="email" type="email" placeholder="correo@ejemplo.com" required>
+            </div>
+            <div class="soporte">
+                <label for="interes">¿Qué planta te interesa?</label>
+                <select name="interes" id="interes" required>
+                    <option value="">Selecciona la planta</option>
+                    <option>Magnolia</option>
+                    <option>Orquídea</option>
+                    <option>Peonía</option>
+                    <option>Ranúnculo</option>
+                </select>
+            </div>
+            <div class="soporte">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" placeholder="Escribe un mensaje"></textarea>
+            </div>
+            <button class="consulta-btn" type="submit">ENVIAR CONSULTA</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="info">
+            <p>📍 Calle Miguel Hidalgo #20</p>
+            <p>📱 462-541-9323</p>
+            <p>✉ greenstore174@gmail.com</p>
+        </div>
+        <p class="copyright">© 2026 Green Store – Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/java.js"></script>
+</body>
+
+</html>
